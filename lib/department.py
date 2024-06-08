@@ -68,6 +68,7 @@ class Department:
     def delete(self):
         """Delete the table row corresponding to the current Department instance
         Also delete the dictionary entry and re_assign id attribute."""
+        
         sql = """
             DELETE FROM departments
             WHERE id = ?
